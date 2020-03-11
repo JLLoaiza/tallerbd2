@@ -1,0 +1,7 @@
+select art.descrip, tipo.nombre_tipo_producto
+from articulo as art
+join tipo_producto as tipo on art.fk_tipo_producto = tipo.cod_tipo_producto
+
+select art.descrip, tipo.nombre_tipo_producto
+from articulo as art, tipo_producto as tipo
+where art.fk_tipo_producto = tipo.cod_tipo_producto
